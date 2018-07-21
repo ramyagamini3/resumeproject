@@ -1,11 +1,49 @@
 {
   "details":{
-    "image": "download(1).jpg",
+    "image": "download (1).jpg",
     "name" : "Sri",
     "phoneno" : "23456787654",
     "email" : "sdfgi@gmail.com",
-    "address" : "xsdrctfygtuhi"
+    "address" : "tpg"
+  },
+"career" :
+{
+  "info" : "Career objective:Seeking a position as an engineering VP/director/manager in initiatives that utilize state-of-the-art, software and/or hardware components with a creative, technology-driven organization in an environment that encourages innovative thinking, recognition, and career development."
+},
+"education":[
+{
+  "degree" :"B.tech",
+  "institute" : "SRKR engineering college",
+  "date":["2016-2020","99%"]
+},
+{
+  "degree" :"Intermediate",
+  "institute" : "Aditya junior college",
+  "date":["2014-2016","97%"]
+},
+{
+  "degree" :"10th",
+  "institute" : "Kimberley EM School",
+  "date":["2013-2014","97%"]
+}],
+"keyskills" :[
+  {
+    "title":"Programming Languages:",
+    "info" :["C,C++,Java,Python,Ruby"]
 
+  },
+  {
+    "title" :"Operating system",
+    "info" :["Windows,linux,mac,ubuntu,dos"]
+  },
+  {
+    "title":["Databases"],
+    "info" :["oracle,sql,mysql"]
   }
-
+]
+,
+"achievements" :
+{
+    "points":"I have got 9199 EAMCET rank"
+  }
 }

@@ -18,6 +18,7 @@ width:50%;
 font-size: 20px;
   border-radius: 25px;
 
+
 }
 .child2{
 background-color: skyblue;
@@ -28,6 +29,7 @@ text-align: left;
 width:50%;
 font-size: 20px;
 border-radius: 20px 40px 3px;
+
 }
 img{
   border-radius: 50%;
@@ -38,12 +40,17 @@ img{
   margin-right: auto;
   box-shadow: 5px 6px 6px black;
 }
-@media only screen and (min-width:768px) and (max-width:1024px){
+td {
+word-break:break-all;
+
+}
+@media only screen and (min-width:320px) and (max-width:480px){
   .parent
   {
       border:15px solid blue;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+
 
   }
 
@@ -57,6 +64,7 @@ img{
   width:50%;
   font-size: 10px;
   color:red;
+  word-wrap: break-word;
 
   }
   .child2{
@@ -67,6 +75,7 @@ img{
   text-align: left;
   width:50%;
   font-size: 10px;
+
   }
   img{
     border-radius: 50%;
@@ -77,13 +86,18 @@ img{
     margin-right: auto;
     box-shadow: 5px 4px 6px black;
   }
+  td {
+  word-break:break-all;
+
+  }
 }
-@media only screen and (min-width:360px) and (max-width:640px){
+@media only screen and (min-width:481px) and (max-width:768px){
   .parent
   {
       border:15px solid blue;
       display: flex;
       flex-direction: column;
+
 
   }
 
@@ -107,6 +121,7 @@ img{
   text-align: left;
   width:50%;
   font-size: 10px;
+
   }
   img{
     border-radius: 50%;
@@ -117,13 +132,18 @@ img{
     margin-right: auto;
     box-shadow: 5px 4px 6px black;
   }
+  td {
+  word-break:break-all;
+
+  }
 }
-@media only screen and (min-width:1024px) and (max-width:1366px){
+@media only screen and (min-width:769px) and (max-width:1024px){
   .parent
   {
       border:15px solid blue;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+
 
   }
 
@@ -136,7 +156,8 @@ img{
   text-align: left;
   width:50%;
   font-size: 10px;
-  color:violet;
+  color:blue;
+
 
   }
   .child2{
@@ -147,6 +168,7 @@ img{
   text-align: left;
   width:50%;
   font-size: 10px;
+
   }
   img{
     border-radius: 50%;
@@ -157,13 +179,18 @@ img{
     margin-right: auto;
     box-shadow: 5px 4px 6px black;
   }
+  td {
+  word-break:break-all;
+
+  }
 }
-@media only screen and (min-width:412px) and (max-width:732px){
+@media only screen and (min-width:1024px) and (max-width:2042px){
   .parent
   {
       border:15px solid blue;
       display: flex;
       flex-direction: column;
+
 
   }
 
@@ -187,14 +214,21 @@ img{
   text-align: left;
   width:50%;
   font-size: 10px;
+  color:pink;
+
   }
   img{
     border-radius: 50%;
     border:2px solid yellow;
-    width:50%;
+    width:2px;
     display:block;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 4px 6px black;
+    height: 5px;
   }
+}
+td {
+word-break:break-all;
+
 }
