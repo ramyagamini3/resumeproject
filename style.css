@@ -189,7 +189,7 @@ word-break:break-all;
   {
       border:15px solid blue;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
 
 
   }
@@ -225,6 +225,8 @@ word-break:break-all;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 4px 6px black;
+    width:100px;
+    height:100px;
   }
 }
 td {
