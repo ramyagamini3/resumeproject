@@ -22,6 +22,10 @@
 //   ac(data.achievements);
 //
 // })
+function openpage()
+{
+  window.open("resume.html", "_self",true);
+}
 function loadjson(file)
 {
   return new Promise((resolve,reject)=>{
