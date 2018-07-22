@@ -1,27 +1,52 @@
-function Loadjson(file,callback)
+// function Loadjson(file,callback)
+// {
+//   var xml=new XMLHttpRequest();
+//   xml.overrideMimeType("application/json");
+//   xml.open("Get",file,true);
+//   xml.onreadystatechange=function()
+//   {
+//     if(xml.readyState===4 && xml.status == "200")
+//     {
+//       callback(xml.responseText);
+//     }
+//   };
+//   xml.send(null);
+// }
+// Loadjson("data.json",function(text){
+//   var data =JSON.parse(text);
+//   console.log(data);
+//   basics(data.details);
+//   career(data.career);
+//   edu(data.education);
+//   ms(data.keyskills);
+//   ac(data.achievements);
+//
+// })
+function loadjson(file)
 {
-  var xml=new XMLHttpRequest();
-  xml.overrideMimeType("application/json");
-  xml.open("Get",file,true);
-  xml.onreadystatechange=function()
-  {
-    if(xml.readyState===4 && xml.status == "200")
+  return new Promise((resolve,reject)=>{
+    return fetch(file).then(response=>{
+      if(response.ok)
     {
-      callback(xml.responseText);
+      resolve(response.json());
     }
-  };
-  xml.send(null);
+  else {
+    reject(new Error('error'));
+  }
+})
+  })
 }
-Loadjson("data.json",function(text){
-  var data =JSON.parse(text);
+var file=loadjson("data.json");
+file.then(data=>
+{
   console.log(data);
   basics(data.details);
-  career(data.career);
-  edu(data.education);
-  ms(data.keyskills);
-  ac(data.achievements);
-
+   career(data.career);
+   edu(data.education);
+     ms(data.keyskills);
+   ac(data.achievements);
 })
+
 
 var child1= document.querySelector(".child1");
 var child2= document.querySelector(".child2");
@@ -122,7 +147,7 @@ function edu(education)
       var hr=document.createElement("hr");
         child2.appendChild(hr);
         var b=document.createElement("h3");
-        b.textContent=t.points;
+         b.textContent=t.points;
         child2.appendChild(b);
 
     }

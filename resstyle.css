@@ -1,0 +1,65 @@
+.parent
+{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  border: 2px solid lime;
+}
+.left
+{
+  background-color:skyblue;
+  border: 2px solid teal;
+  width:50%;
+padding:2%;
+margin:3%;
+}
+.right
+{
+  border: 2px solid red;
+  width:50%;
+padding:2%;
+margin:3%;
+}
+img{
+  border-radius: 50%;
+  border:black;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 6px 6px black;
+  width:70px;
+  height:70px;
+}
+hr{
+  color:red;
+}
+#co{
+  color:blue;
+
+}
+#para{
+  font-size:20px;
+  color:blue;
+}
+li{
+  color: BlueViolet;
+  font-size:20px;
+}
+#in{
+  color:BlueViolet;
+}
+#in1
+{
+  color:coral;
+}
+#ssc{
+  color:teal;
+}
+tr{
+  word-break: break-all;
+}
+#ach{
+color:maroon;
+font-size:20px;
+
+}
